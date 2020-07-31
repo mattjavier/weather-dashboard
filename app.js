@@ -1,4 +1,4 @@
-let key = 'b46e0399b18e0132c4c34e7071caa187'
+let key = ''
 
 document.getElementById('searchBtn').addEventListener('click', event => {
   event.preventDefault()
