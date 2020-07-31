@@ -51,7 +51,7 @@ document.getElementById('searchBtn').addEventListener('click', event => {
 
 
 {/* <h3 id="uv">UV Index: <span id="uvNumber" class="rounded">${res} */}
-// axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=imperial&appid=1dd25ac798a84daed3b612ef4b3c9a3e`)
+// axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=imperial&appid=${key}`)
       //   .then(res => {
       //     let forecast = res.data.list
 
