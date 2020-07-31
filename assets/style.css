@@ -27,6 +27,7 @@
 #cityConditions {
   height: 300px;
   margin: 15px 0 15px 0;
+  padding: 20px;
 }
 
 #fiveDayTitle {
@@ -36,6 +37,7 @@
 .days {
   width: 180px;
   height: 200px;
+  padding: 10px;
 }
 
 #uvNumber {
