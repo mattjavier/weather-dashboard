@@ -1,3 +1,32 @@
+#header {
+  margin: 0;
+}
+
 #title {
+  font-family: 'Lato', sans-serif;
+}
+
+#mainContent {
+  
+}
+
+#sidebar {
+  padding: 15px;
+}
+
+#searchTitle {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+}
+
+#cityButtons {
+  width: 100%;
+}
+
+#cityButtons button {
+  padding: 10px;
+}
+
+#fiveDayTitle {
   font-family: 'Lato', sans-serif;
 }
