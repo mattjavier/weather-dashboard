@@ -1,13 +1,10 @@
 #header {
   margin: 0;
+  padding: 30px 0 30px 0;
 }
 
 #title {
   font-family: 'Lato', sans-serif;
-}
-
-#mainContent {
-  
 }
 
 #sidebar {
@@ -27,6 +24,20 @@
   padding: 10px;
 }
 
+#cityConditions {
+  height: 300px;
+  margin: 15px 0 15px 0;
+}
+
 #fiveDayTitle {
   font-family: 'Lato', sans-serif;
+}
+
+.days {
+  width: 180px;
+  height: 200px;
+}
+
+#uvNumber {
+  padding: 5px;
 }
