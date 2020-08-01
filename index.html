@@ -25,6 +25,8 @@
     </header>
     <main id="mainContent" class="container-fluid">
       <div class="row">
+
+        <!-- search bar and search history-->
         <aside id="sidebar" class="col-lg-3 bg-light">
           <p id="searchTitle">Search for a City: </p>
           <div class="input-group mb-3">
@@ -33,29 +35,19 @@
               <button class="btn btn-outline-secondary bg-primary text-white" type="button" id="searchBtn"><i class="fas fa-search"></i></button>
             </div>
           </div>
-          <aside id="cityButtons" class="btn-group-vertical rounded">
-            <button class="btn btn-light border border-secondary text-left text-secondary bg-white">Austin</button>
-            <button class="btn btn-light border border-secondary text-left text-secondary bg-white">Chicago</button>
-            <button class="btn btn-light border border-secondary text-left text-secondary bg-white">New York</button>
-            <button class="btn btn-light border border-secondary text-left text-secondary bg-white">Orlando</button>
-            <button class="btn btn-light border border-secondary text-left text-secondary bg-white">San Francisco</button>
-            <button class="btn btn-light border border-secondary text-left text-secondary bg-white">Seattle</button>
-            <button class="btn btn-light border border-secondary text-left text-secondary bg-white">Denver</button>
-            <button class="btn btn-light border border-secondary text-left text-secondary bg-white">Atlanta</button>
-          </aside>
+
+          <!-- history buttons -->
+          <aside id="cityButtons" class="btn-group-vertical rounded"></aside>
         </aside>
         <div class="col-lg-9 bg-white">
-          <section id="cityConditions" class="border border-secondary rounded">
 
-          </section>
+          <!-- section for weather conditions for searched city -->
+          <section id="cityConditions" class="border border-secondary rounded"></section>
+
+          <!-- section for five day forecast -->
           <section id="fiveDay">
-            <h2 id="fiveDayTitle">5-Day Forecast:</h2>
-            <div id="forecast" class="d-flex justify-content-between">
-              <!-- <div class="card bg-primary rounded days"></div>
-              <div class="card bg-primary rounded days"></div>
-              <div class="card bg-primary rounded days"></div>
-              <div class="card bg-primary rounded days"></div>
-              <div class="card bg-primary rounded days"></div> -->
+            <h3 id="fiveDayTitle">5-Day Forecast:</h3>
+            <div id="forecast" class="row">
             </div> 
           </section>
         </div>
