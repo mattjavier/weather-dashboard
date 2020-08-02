@@ -14,4 +14,18 @@ A weather dashboard application that utilizes a third-part API, the OpenWeather 
 
 * Upon opening the weather dashboard, or upon refreshing the page, the search history will be displayed, along with the weather conditions for the most recently searched city.
 
+Below are some images displaying the Weather Dashboard's functionality
+
+* This is the initial state of the dashboard.
+<img src="./images/dashboard-1.png" width="300">
+
+* After searching "Anaheim", the search history updates and displays the weather conditions and the five-day forecast for Anaheim.
+<img src="./images/dashboard-2.png" width="300">
+
+* Another search with "Houston", updating the search history on the left side of the dashboard.
+<img src="./images/dashboard-3.png" width="300">
+
+* A final search for "Juneau", this city has a moderate UV index, which is displayed with a yellow background. Upon refreshing the page, Juneau would be the latest entry in the search history, therefore would be displayed again on the dashboard.
+<img src="./images/dashboard-4.png" width="300">
+
 View the weather dashboard at https://mattjavier.github.io/weather-dashboard/
