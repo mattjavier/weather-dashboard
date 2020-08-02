@@ -117,5 +117,6 @@ document.getElementById('searchBtn').addEventListener('click', event => {
 document.addEventListener('click', event => {
   if (event.target.classList.contains('history')) {
     lookup(event.target.dataset.city)
+    addToHistory(event.target.dataset.city)
   }
 })
