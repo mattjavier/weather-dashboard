@@ -97,12 +97,7 @@ const lookup = city => {
     .catch(err => { console.log(err) })
 }
 
-populateHistory()
-
-// event listener for search button
-document.getElementById('searchBtn').addEventListener('click', event => {
-  event.preventDefault()
-
+const performSearch = () => {
   let cityName = document.getElementById('citySearch').value
   document.getElementById('citySearch').value = ''
 
@@ -110,7 +105,22 @@ document.getElementById('searchBtn').addEventListener('click', event => {
   addToHistory(cityName)
   // perform axios requests for city
   lookup(cityName)
+}
 
+populateHistory()
+
+// event listener for search button
+document.getElementById('searchBtn').addEventListener('click', event => {
+  event.preventDefault()
+  performSearch()
+})
+
+// same functionality as search with click except search with enter
+document.getElementById('citySearch').addEventListener('keyup', event => {
+  if (event.keyCode === 13) {
+    event.preventDefault()
+    performSearch()
+  }
 })
 
 // event listener for search history buttons
