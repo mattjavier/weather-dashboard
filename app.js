@@ -1,5 +1,3 @@
-let key = ''
-
 const populateHistory = () => {
   let searchHistory = JSON.parse(localStorage.getItem('searchHistory')) || []
 
@@ -36,7 +34,7 @@ const addToHistory = city => {
 const lookup = city => {
 
   // axios request to lookup weather data for city
-  axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${key}`)
+  axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=b46e0399b18e0132c4c34e7071caa187`)
     .then(res => {
       
       // create html for cityConditions section
@@ -48,7 +46,7 @@ const lookup = city => {
       `
 
       // axios request to get uv index, lat and lon values from response required
-      axios.get(`https://api.openweathermap.org/data/2.5/uvi?lat=${res.data.coord.lat}&lon=${res.data.coord.lon}&appid=${key}`)
+      axios.get(`https://api.openweathermap.org/data/2.5/uvi?lat=${res.data.coord.lat}&lon=${res.data.coord.lon}&appid=b46e0399b18e0132c4c34e7071caa187`)
         .then(res => {
           let uv = document.createElement('p')
           uv.id = 'uv'
@@ -79,7 +77,7 @@ const lookup = city => {
     })
 
   // axios request to get data for five day forecast
-  axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=imperial&appid=${key}`)
+  axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=imperial&appid=b46e0399b18e0132c4c34e7071caa187`)
     .then(res => {
       let forecast = res.data.list
       document.getElementById('forecast').innerHTML = ''
