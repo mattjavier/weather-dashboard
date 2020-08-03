@@ -56,11 +56,11 @@ const lookup = city => {
           uvSpan.id = 'uvNumber'
           uvSpan.classList.add('rounded')
           let index = res.data.value
-          if (index <= 3) {
+          if (index <= 2) {
             uvSpan.classList.add('bg-success')
-          } else if (index > 3 && index <= 7) {
+          } else if (index > 2 && index < 6) {
             uvSpan.classList.add('bg-warning')
-          } else if (index > 7) {
+          } else if (index >= 6) {
             uvSpan.classList.add('bg-danger')
           }
           uvSpan.textContent = index
